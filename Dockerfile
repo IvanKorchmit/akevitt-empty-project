@@ -6,12 +6,12 @@ COPY . .
 
 WORKDIR  /app/
 
-RUN mkdir data
-
 RUN go mod download
 
 RUN go get github.com/githubnemo/CompileDaemon
 RUN go install github.com/githubnemo/CompileDaemon
+
+RUN chmod -r u+rwx .
 
 EXPOSE 2222
 
