@@ -1,11 +1,8 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
-	"image/png"
 	"log"
-	"os"
 	"strconv"
 	"strings"
 
