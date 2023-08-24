@@ -11,7 +11,7 @@ RUN go mod download
 RUN go get github.com/githubnemo/CompileDaemon
 RUN go install github.com/githubnemo/CompileDaemon
 
-RUN chmod -r u+rwx .
+RUN chmod -R 777 .
 
 EXPOSE 2222
 
