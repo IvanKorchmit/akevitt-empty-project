@@ -139,7 +139,7 @@ func rootScreen(engine *akevitt.Akevitt, session akevitt.ActiveSession) tview.Pr
 	}
 	image := tview.NewImage().SetImage(pngLogo)
 	wizard := tview.NewModal().
-		SetText("Welcome to the template! Would you register your account?").
+		SetText("Welcome to the {{.ProjectName}}! Would you register your account?").
 		AddButtons([]string{"Register", "Login"}).
 		SetDoneFunc(func(buttonIndex int, buttonLabel string) {
 			if buttonLabel == "Login" {
