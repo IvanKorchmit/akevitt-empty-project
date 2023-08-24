@@ -1,0 +1,18 @@
+# executables
+*.exe
+{{.ProjectName}}
+# database files
+*.db
+*.db.lock
+
+# some useful binaries
+!boltbrowser.win64.exe
+
+# Un-ignore {{.ProjectName}} directory
+!{{.ProjectName}}/
+
+# sensitive stuff
+*.pem
+*.key
+*.csr
+id_rsa*

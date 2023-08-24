@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  iron-exalt:
+    image: {{.ProjectName}}
+    volumes:
+      - ./{{.ProjectName}}/:/app/{{.ProjectName}}
+    build:
+      context: .
+      dockerfile: ./Dockerfile
