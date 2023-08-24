@@ -23,7 +23,7 @@ func main() {
 	spawn := generateRooms()
 
 	engine := akevitt.NewEngine().
-		UseDBPath("template.db").
+		UseDBPath("{{.ProjectName}}.db").
 		UseOnMessage(onMessage).
 		UseOnSessionEnd(onSessionEnd).
 		UseOnDialogue(onDialogue).
