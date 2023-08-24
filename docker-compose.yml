@@ -4,7 +4,7 @@ services:
   iron-exalt:
     image: {{.ProjectName}}
     volumes:
-      - .:/app/{{.ProjectName}}
+      - .:/app
     build:
       context: .
       dockerfile: ./Dockerfile
